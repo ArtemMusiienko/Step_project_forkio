@@ -93,7 +93,7 @@ gulp.task('sync', function () {
    
 });
 gulp.task('build', gulp.series('default',gulp.parallel('sass-compile','scripts')));
-gulp.task('dev', gulp.series('build','sync'))
+gulp.task('dev', gulp.series('build','images','sync'))
 
 
 
